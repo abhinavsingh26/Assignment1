@@ -27,11 +27,12 @@
 
                 <label for="fname"><b>2.Name:</b></label><input type="text" id="fname" name="fname">
 
-                <h4>Upload Your Photo</h4>
+                <h4>Upload Your Photo<br><input type="file" id="myfile" name="myfile"><br></h4>
+                
 
                 <label for="fathername"><b>3. Father's Name</b></label><input type="text" id="fathername" name="fathername">
 
-                <h4>4. Date of Birth</h4>
+                <h4>4. Date of Birth  <input type="date" id="birthday" name="birthday">   Age</h4>
 
                 <h4>
                     5. Gender
@@ -87,7 +88,7 @@
                 <br />
 
                 <B>Select State</B><br />
-                <select name=slist>
+                <select name=statelist id="Slist">
                     <option value="">Select State</option>
                     <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -227,7 +228,7 @@
 
                 <button type="button" onclick="alert('Your form is Submitted')">SUBMIT FORM</button>
                 <button type="button" onclick="alert('Draft Saved')">SAVE DRAFT</button>
-                <button type="button" onclick="alert('Form Cleared')">CLEAR FORM</button>
+                <button type="reset" onclick="alert('Form Cleared')">CLEAR FORM</button>
                 <button type="button" onclick="alert('Back to square one')">BACK</button>
 
     </form>
