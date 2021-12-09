@@ -8,228 +8,239 @@
 
     <form action="/action_page.php" target="_blank" method="post" autocomplete="on">
 
-        
 
+       
+        <h4>
+            <b>
+                1. Position Code
 
-                <h4>
-                    <b>
-                        1. Position Code
-                        <select id="PCode" name="PosCode">
-                            <option value="">Select</option>
-                            <option value="PEngineer">E101</option>
-                            <option value="AsEngineer">E102</option>
-                            <option value="AdEngineer">E103</option>
-                            <option value="GuEngineer">E104</option>
-                        </select>
-                        <br />(Select one)
-                    </b>
-                </h4>
-
-                <label for="fname"><b>2.Name:</b></label><input type="text" id="fname" name="fname">
-
-                <h4>Upload Your Photo<br><input type="file" id="myfile" name="myfile"><br></h4>
-                
-
-                <label for="fathername"><b>3. Father's Name</b></label><input type="text" id="fathername" name="fathername">
-
-                <h4>4. Date of Birth  <input type="date" id="birthday" name="birthday">   Age</h4>
-
-                <h4>
-                    5. Gender
-                    <select id="gender" name="gender">
-                        <option value="M">Male</option>
-                        <option value="F">Female</option>
-                        <option value="N">No Comments</option>
-                    </select>
-                </h4>
-
-                <label for="Nationality"><b>6. Nationality</b></label><input type="text" id="fname" name="Nationality">
-
-                <h4>
-                    7. Martial Status
-                    <select id="MS" name="MStatus">
-                        <option value="Si">Single</option>
-                        <option value="Ma">Married</option>
-                        <option value="Wi">Widowed</option>
-                        <option value="Di">Divorced</option>
-                    </select>
-                </h4>
-
-                <h4>
-                    8. Whether belongs to
-
-                    <input type="radio" id="SC" name="caste" value="SC">
-                    <label for="SC">SC</label>
-                    <input type="radio" id="ST" name="caste" value="ST">
-                    <label for="ST">ST</label>
-                    <input type="radio" id="OBC" name="caste" value="OBC">
-                    <label for="OBC">OBC</label>
-                    <input type="radio" id="PWD" name="caste" value="PWD">
-                    <label for="PWD">PWD</label>
-                    <input type="radio" id="General" name="caste" value="General">
-                    <label for="General">General</label>
-
-                    <br />(Select one)
-                </h4>
-
-                <h4>
-                    9. Proof of Identity
-                    <select id="ID" name="Identity">
-                        <option value="Aan">Aadhar Number</option>
-                        <option value="Pan">PAN Number</option>
-                        <option value="Pas">Passport Number</option>
-
-                    </select>
-                    <input type="text" id="IDnumber" name="IDnumber" placeholder="Write your Aadhar/PAN number">
-                </h4>
-
-                <label for="Address"><b>10. Address for <br /> Correspondence</b><textarea name="m1" style="width:300px; height:50px;"></textarea></label>
-                <br />
-                <br />
-
-                <B>Select State</B><br />
-                <select name=statelist id="Slist">
-                    <option value="">Select State</option>
-                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                    <option value="Assam">Assam</option>
-                    <option value="Bihar">Bihar</option>
-                    <option value="Chandigarh">Chandigarh</option>
-                    <option value="Chhattisgarh">Chhattisgarh</option>
-                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-                    <option value="Daman and Diu">Daman and Diu</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Goa">Goa</option>
-                    <option value="Gujarat">Gujarat</option>
-                    <option value="Haryana">Haryana</option>
-                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                    <option value="Jharkhand">Jharkhand</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Kerala">Kerala</option>
-                    <option value="Lakshadweep">Lakshadweep</option>
-                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-                    <option value="Maharashtra">Maharashtra</option>
-                    <option value="Manipur">Manipur</option>
-                    <option value="Meghalaya">Meghalaya</option>
-                    <option value="Mizoram">Mizoram</option>
-                    <option value="Nagaland">Nagaland</option>
-                    <option value="Orissa">Orissa</option>
-                    <option value="Pondicherry">Pondicherry</option>
-                    <option value="Punjab">Punjab</option>
-                    <option value="Rajasthan">Rajasthan</option>
-                    <option value="Sikkim">Sikkim</option>
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-                    <option value="Tripura">Tripura</option>
-                    <option value="Uttaranchal">Uttaranchal</option>
-                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-                    <option value="West Bengal">West Bengal</option>
+                <select id="PCode" name="PosCode" required>
+                    <option value="">Select</option>
+                    <option value="PEngineer">E101</option>
+                    <option value="AsEngineer">E102</option>
+                    <option value="AdEngineer">E103</option>
+                    <option value="GuEngineer">E104</option>
                 </select>
-                <br /><br />
+                <br />(Select one)
 
-                <B>Pincode</B> <input type="text" id="pin" name="pin">
+            </b>
+        </h4>
 
-
-                <h4>
-                    11. Are you currently working with CDAC ?
-                    <select id="CWorking" name="CWorking">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                    </select>
-                </h4>
+        <label for="fname"><b>2.Name:</b></label><input type="text" id="fname" name="fname" required>
 
 
-                <h4>
-                    12. Are you employed in any Govt./ Semi-Govt./ PSU/
-                    <select class="form-control dropdown" id="employment" name="employment">
-                        <option value="Govt">Government</option>
-                        <option value="Self-employed">Semi-Government</option>
-                        <option value="Out of work">PSU</option>
-                        <option value="Homemaker">Autonomous Bodies</option>
-                    </select>
-                    <br />Autonomous Bodies ?
-                </h4>
-
-                <p>If <b>"YES"</b> the application should be forwarded through proper channel or NOC to be produced at the time of Interview</p>
-
-                <h4>
-                    13. Have you ever been interviewed for recruitment in any
-                    <select id="Ibefore" name="Ibefore">
-                        <option value="No">No</option>
-                        <option value="Yes">Yes</option>
-                    </select>
-                    <br /> post in C-DAC earlier?
-                </h4>
-
-                <h4><b>14. Academic & Professional Qualifications</b> (Begin with latest Graduation/ PG/ PG Diploma (if any)/ PhD)</h4>
-
-                <h4>15. Work Experience (Latest First)</h4>
-
-                <h4>16. Any Short Term Certificate courses/ Training Undergone<textarea name="m2" style="width:300px; height:50px;"></textarea></h4>
-
-                <h4>17. GATE/ UGC-CSIR Examination etc. Qualified, if any<textarea name="m3" style="width:300px; height:50px;"></textarea></h4>
-
-                <h4>
-                    18. a) P.G (M.E/ M. Tech) Project Title<textarea name="m4" style="width:300px; height:50px;"></textarea></br>
-                    b) P.G Project Synopsis/ Abstract <br />(Max. 250 Words)
-                </h4>
-
-                <h4>
-                    19. a) Ph.D Thesis Title<br />
-                    b) Ph.D Thesis Synopsis/ Abstract (Max. 250 Words)
-                    <textarea name="m5" style="width:300px; height:50px;"></textarea>
-                </h4>
-
-                <h4>
-                    20. Workshops/ Seminars/ Conferences attended
-                    <textarea name="m6" style="width:300px; height:50px;"></textarea>
-                </h4>
-
-                <h4>
-                    21. Papers published/ presented / Technical talks delivered
-                    <textarea name="m7" style="width:300px; height:50px;"></textarea>
-                </h4>
-
-                <h4>
-                    22. Any additional info that may not have been covered
-                    <textarea name="m8" style="width:300px; height:50px;"></textarea>
-                </h4>
-
-                <h4>
-                    23. References (Name, Occupation, Addr, Email, Mobile#)
-                    <textarea name="m9" style="width:300px; height:50px;"></textarea>
-                </h4>
-
-                <p>Application Fees Details</p>
+        <h4>Upload Your Photo<br><input type="file" id="myfile" name="myfile"><br></h4>
 
 
-                <p>Upload proof of payment</p>
+        <label for="fathername"><b>3. Father's Name</b></label><input type="text" id="fathername" name="fathername">
+
+        <h4>4. Date of Birth  <input type="date" id="birthday" name="birthday">   Age</h4>
+
+        <h4>
+            5. Gender
+            <select id="gender" name="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="N">No Comments</option>
+            </select>
+        </h4>
+
+        <label for="Nationality"><b>6. Nationality</b></label><input type="text" id="fname" name="Nationality">
+
+        <h4>
+            7. Martial Status
+            <select id="MS" name="MStatus">
+                <option value="Si">Single</option>
+                <option value="Ma">Married</option>
+                <option value="Wi">Widowed</option>
+                <option value="Di">Divorced</option>
+            </select>
+        </h4>
+
+        <h4>
+            8. Whether belongs to
+
+            <input type="radio" id="SC" name="caste" value="SC">
+            <label for="SC">SC</label>
+            <input type="radio" id="ST" name="caste" value="ST">
+            <label for="ST">ST</label>
+            <input type="radio" id="OBC" name="caste" value="OBC">
+            <label for="OBC">OBC</label>
+            <input type="radio" id="PWD" name="caste" value="PWD">
+            <label for="PWD">PWD</label>
+            <input type="radio" id="General" name="caste" value="General">
+            <label for="General">General</label>
+
+            <br />(Select one)
+        </h4>
+
+        <h4>
+            9. Proof of Identity
+            <select id="ID" name="Identity">
+                <option value="Aan">Aadhar Number</option>
+                <option value="Pan">PAN Number</option>
+                <option value="Pas">Passport Number</option>
+
+            </select>
+            <input type="text" id="IDnumber" name="IDnumber" placeholder="Write your Aadhar/PAN number">
+        </h4>
+
+        <label for="Address"><b>10. Address for <br /> Correspondence</b><textarea name="m1" style="width:300px; height:50px;"></textarea></label>
+        <br />
+        <br />
+
+        <label for="phone"><b>Mobile:</b></label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit mobile no">
+        <br /><br />
+
+        <label for="email"><b>Primery email:</b></label>
+        <input type="email" id="email" name="email"><br />
+        <label for="email"><b>Secondary email:</b></label>
+        <input type="email" id="email" name="email">
+        <br /> <br />
+        <B>Select State</B><br />
+        <select name=statelist id="Slist">
+            <option value="">Select State</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Orissa">Orissa</option>
+            <option value="Pondicherry">Pondicherry</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttaranchal">Uttaranchal</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="West Bengal">West Bengal</option>
+        </select>
+        <br /><br />
+
+        <B>Pincode</B> <input type="text" id="pin" name="pin">
 
 
-                <p><b>Uploadyour CV</b>File name: [yourname_CV.pdf]</p>
-
-                <h3><u><b>DECLARATION</b></u></h3>
-
-                <p>
-                    <b>
-                        1. I certify that all information provided in this application is true, complete and correct to the best of my knowledge and
-                        belief.<br />I understand that any false information or omission of information may disqualify me from consideration for employment
-                        and may result in dismissal from the job, if discovered at a later date.</br>
-                        2. I have read and understood the above declaration before signing this.
-                    </b>
-                </p>
+        <h4>
+            11. Are you currently working with CDAC ?
+            <select id="CWorking" name="CWorking">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </h4>
 
 
-                <input type="checkbox" id="TC" name="TC" value="TC">
-                <label for="TC"><b> I accept the Terms and Conditions</b></label>
-                <br />
+        <h4>
+            12. Are you employed in any Govt./ Semi-Govt./ PSU/
+            <select class="form-control dropdown" id="employment" name="employment">
+                <option value="Govt">Government</option>
+                <option value="Self-employed">Semi-Government</option>
+                <option value="Out of work">PSU</option>
+                <option value="Homemaker">Autonomous Bodies</option>
+            </select>
+            <br />Autonomous Bodies ?
+        </h4>
+
+        <p>If <b>"YES"</b> the application should be forwarded through proper channel or NOC to be produced at the time of Interview</p>
+
+        <h4>
+            13. Have you ever been interviewed for recruitment in any
+            <select id="Ibefore" name="Ibefore">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            <br /> post in C-DAC earlier?
+        </h4>
+
+        <h4><b>14. Academic & Professional Qualifications</b> (Begin with latest Graduation/ PG/ PG Diploma (if any)/ PhD)</h4>
+
+        <h4>15. Work Experience (Latest First)</h4>
+
+        <h4>16. Any Short Term Certificate courses/ Training Undergone<textarea name="m2" style="width:300px; height:50px;"></textarea></h4>
+
+        <h4>17. GATE/ UGC-CSIR Examination etc. Qualified, if any<textarea name="m3" style="width:300px; height:50px;"></textarea></h4>
+
+        <h4>
+            18. a) P.G (M.E/ M. Tech) Project Title<textarea name="m4" style="width:300px; height:50px;"></textarea></br>
+            b) P.G Project Synopsis/ Abstract <br />(Max. 250 Words)
+        </h4>
+
+        <h4>
+            19. a) Ph.D Thesis Title<br />
+            b) Ph.D Thesis Synopsis/ Abstract (Max. 250 Words)
+            <textarea name="m5" style="width:300px; height:50px;"></textarea>
+        </h4>
+
+        <h4>
+            20. Workshops/ Seminars/ Conferences attended
+            <textarea name="m6" style="width:300px; height:50px;"></textarea>
+        </h4>
+
+        <h4>
+            21. Papers published/ presented / Technical talks delivered
+            <textarea name="m7" style="width:300px; height:50px;"></textarea>
+        </h4>
+
+        <h4>
+            22. Any additional info that may not have been covered
+            <textarea name="m8" style="width:300px; height:50px;"></textarea>
+        </h4>
+
+        <h4>
+            23. References (Name, Occupation, Addr, Email, Mobile#)
+            <textarea name="m9" style="width:300px; height:50px;"></textarea>
+        </h4>
+
+        <p>Application Fees Details</p>
 
 
-                <button type="button" onclick="alert('Your form is Submitted')">SUBMIT FORM</button>
-                <button type="button" onclick="alert('Draft Saved')">SAVE DRAFT</button>
-                <button type="reset" onclick="alert('Form Cleared')">CLEAR FORM</button>
-                <button type="button" onclick="alert('Back to square one')">BACK</button>
+        <p>Upload proof of payment</p>
+
+
+        <p><b>Uploadyour CV</b>File name: [yourname_CV.pdf]</p>
+
+        <h3><u><b>DECLARATION</b></u></h3>
+
+        <p>
+            <b>
+                1. I certify that all information provided in this application is true, complete and correct to the best of my knowledge and
+                belief.<br />I understand that any false information or omission of information may disqualify me from consideration for employment
+                and may result in dismissal from the job, if discovered at a later date.</br>
+                2. I have read and understood the above declaration before signing this.
+            </b>
+        </p>
+
+
+        <input type="checkbox" id="TC" name="TC" value="TC">
+        <label for="TC"><b> I accept the Terms and Conditions</b></label>
+        <br />
+
+
+        <button type="button" onclick="alert('Your form is Submitted')">SUBMIT FORM</button>
+        <button type="button" onclick="alert('Draft Saved')">SAVE DRAFT</button>
+        <button type="reset" onclick="alert('Form Cleared')">CLEAR FORM</button>
+        <button type="button" onclick="alert('Back to square one')">BACK</button>
 
     </form>
 </body>
